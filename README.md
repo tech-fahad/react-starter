@@ -1,5 +1,5 @@
-# Test-Todo-ReactJS
-ReactJS Starter project
+# React Starter Project
+packages include
 - *babel*
 - *redux*
 - *react-router*
