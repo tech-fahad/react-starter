@@ -67,6 +67,10 @@
 	
 	var _Git2 = _interopRequireDefault(_Git);
 	
+	var _Footer = __webpack_require__(/*! ./components/Footer */ 257);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -122,7 +126,8 @@
 	            )
 	          )
 	        ),
-	        this.props.children
+	        this.props.children,
+	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
 	  }]);
@@ -27194,7 +27199,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _react = __webpack_require__(/*! react */ 1);
@@ -27204,16 +27209,33 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Home = function Home() {
-	    return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Home'
-	        ),
-	        'This is our home page.'
-	    );
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Principle of Redux'
+	    ),
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      '1st'
+	    ),
+	    'Reperesent whole state of an application as a Single JS object',
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      '2nd'
+	    ),
+	    'State tree is read only, need to dispatch an action to change the state tree.',
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      '3rd'
+	    ),
+	    'Reducer: take the previous state, the dispatch action and returns the next start.'
+	  );
 	};
 	
 	exports.default = Home;
@@ -29016,6 +29038,35 @@
 	}
 	
 	exports.default = Bio;
+
+/***/ },
+/* 257 */
+/*!**********************************!*\
+  !*** ./src/components/Footer.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Footer = function Footer() {
+	  return _react2.default.createElement(
+	    'p',
+	    null,
+	    'Some footer text.'
+	  );
+	};
+	
+	exports.default = Footer;
 
 /***/ }
 /******/ ]);
